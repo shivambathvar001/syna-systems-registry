@@ -1,0 +1,10 @@
+{
+  "name": "Syna Systems Zero-Trust MCP Server",
+  "version": "1.0.0",
+  "description": "Secure bridge for LLMs to interact with internal enterprise data without exposing raw credentials.",
+  "main": "index.js",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.0.0"
+  }
+}

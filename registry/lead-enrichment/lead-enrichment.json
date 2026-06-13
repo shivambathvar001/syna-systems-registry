@@ -1,0 +1,15 @@
+{
+  "name": "Syna Lead Enrichment Engine",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://api.clay.com/v1/enrich",
+        "options": {}
+      },
+      "name": "Clay Enrichment",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [250, 300]
+    }
+  ]
+}

@@ -11,13 +11,19 @@
 *   **Description:** AI-native support systems that resolve 70%+ of queries and manage omnichannel communication.
 *   **Tech Stack:** Intercom Fin, Voiceflow (Custom Agents), WhatsApp Business API, Custom GPT-4o Knowledge Bases.
 *   **Value:** Instant response times, reduced support overhead, proactive customer engagement.
-
 ### 3. Agentic Workflow Automation
 *   **Description:** Custom autonomous agents that handle complex business operations, document processing, and internal task routing.
 *   **Tech Stack:** n8n, Make, LangChain (Custom Python Agents), Deepgram (Voice-to-Text).
 *   **Value:** Operational efficiency, elimination of repetitive tasks, high-speed document processing.
 
+### 4. Specialized Vertical: Predictive Denial Management (Healthcare RCM)
+*   **Description:** High-precision clinical auditing and payer rule engines designed to eliminate claim denials at the source.
+*   **Tech Stack:** LangGraph (Stateful Graphs), HIPAA-compliant LLM Gateways (Sanity), OCR/Document Intelligence.
+*   **Value:** 300-600% ROI, 15%+ increase in clean claim rates, reclaimed millions in denied revenue.
+
 ## Engagement Model
+...
+
 - **Audit & Roadmap:** Initial deep dive into client processes.
 - **Implementation:** Sprint-based builds of automated workflows.
 - **Optimization & Management:** Ongoing monitoring, performance tuning, and agent updates.

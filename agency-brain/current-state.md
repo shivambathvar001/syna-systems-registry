@@ -17,7 +17,8 @@
 4. **Website Finalization:** [COMPLETED] Finalize the "Healthcare RCM" solution page on the main website.
 
 ## Future Roadmaps
-- **Lead Gen Scaling:** Launch the automated outreach engine for the Healthcare niche.
+- **Lead Gen Execution:** [COMPLETED] Run the `lead_gen.py` script to populate `healthcare_leads.csv`. (41 high-intent leads captured).
+- **Outreach Automation:** Integrate leads with the email outreach engine (Instantly.ai).
 - **Client Onboarding:** Prepare the "Velocity Pilot" intake forms.
 
 

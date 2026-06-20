@@ -55,7 +55,7 @@ export default function Home() {
                 <BarChart3 className="text-cyan-500 mb-4" size={40} />
                 <h3 className="text-5xl font-black text-white tracking-tighter">$2.1T</h3>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-500">Annual Economic Leakage</p>
-                <p className="text-sm text-slate-400 font-light leading-relaxed">Lost globally due to manual operational latency and "Human Middleware" bottlenecks in mid-to-large enterprises.</p>
+                <p className="text-sm text-slate-400 font-light leading-relaxed">Lost globally due to manual operational latency and &quot;Human Middleware&quot; bottlenecks in mid-to-large enterprises.</p>
               </div>
               <div className="flex flex-col gap-4">
                 <Layers className="text-indigo-500 mb-4" size={40} />
@@ -67,7 +67,7 @@ export default function Home() {
                 <ShieldCheck className="text-emerald-500 mb-4" size={40} />
                 <h3 className="text-5xl font-black text-white tracking-tighter">&lt; 14 Days</h3>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-500">Velocity to ROI</p>
-                <p className="text-sm text-slate-400 font-light leading-relaxed">Average timeline for a Syna Systems "Velocity Pilot" to demonstrate measurable efficiency gains in production environments.</p>
+                <p className="text-sm text-slate-400 font-light leading-relaxed">Average timeline for a Syna Systems &quot;Velocity Pilot&quot; to demonstrate measurable efficiency gains in production environments.</p>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function Home() {
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-cyan-500 mb-6">The Syna Stack</p>
               <h2 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-8">Engineering for <br />Stateful Reliability.</h2>
               <p className="text-xl text-slate-400 font-light leading-relaxed">
-                Most AI agencies build "wrappers." We architect infrastructure. Our deployments utilize a three-layer security and orchestration stack designed for zero-failure operations.
+                Most AI agencies build &quot;wrappers.&quot; We architect infrastructure. Our deployments utilize a three-layer security and orchestration stack designed for zero-failure operations.
               </p>
             </div>
 
@@ -206,7 +206,7 @@ export default function Home() {
                  <div>
                     <h2 className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-12">The <br />Alignment <br />Protocol.</h2>
                     <p className="text-xl text-neutral-600 font-light leading-relaxed">
-                       We don't sell software licenses. We build long-term operational partnerships through a rigorous, multi-stage deployment framework.
+                       We don&apos;t sell software licenses. We build long-term operational partnerships through a rigorous, multi-stage deployment framework.
                     </p>
                  </div>
                  <div className="space-y-16 pt-4">

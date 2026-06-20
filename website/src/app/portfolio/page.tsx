@@ -214,11 +214,11 @@ export default function Portfolio() {
                 {/* Problem / Solution columns */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-10">
                   <div className="bg-slate-950/50 rounded-2xl p-6 border border-slate-900">
-                    <div className="text-[9px] font-mono font-bold tracking-[0.3em] text-red-400 uppercase mb-3">// The Problem</div>
+                    <div className="text-[9px] font-mono font-bold tracking-[0.3em] text-red-400 uppercase mb-3">{"// The Problem"}</div>
                     <p className="text-sm text-slate-400 leading-relaxed">{eng.problem}</p>
                   </div>
                   <div className="bg-slate-950/50 rounded-2xl p-6 border border-slate-900">
-                    <div className="text-[9px] font-mono font-bold tracking-[0.3em] text-green-400 uppercase mb-3">// Our Architecture</div>
+                    <div className="text-[9px] font-mono font-bold tracking-[0.3em] text-green-400 uppercase mb-3">{"// Our Architecture"}</div>
                     <p className="text-sm text-slate-400 leading-relaxed">{eng.solution}</p>
                   </div>
                 </div>

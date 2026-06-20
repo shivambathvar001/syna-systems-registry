@@ -155,7 +155,7 @@ export default function Solutions() {
               <BarChart4 size={60} className="mb-12 opacity-50" />
               <h2 className="text-5xl md:text-8xl font-black tracking-tighter mb-12 uppercase">14-Day <br />Pilot Cycle.</h2>
               <p className="text-xl text-indigo-100 font-light leading-relaxed mb-16 max-w-2xl">
-                 We commit to production readiness within two weeks. Our "Velocity Pilot" program identifies one critical bottleneck and delivers a functioning, secure agentic backbone.
+                 We commit to production readiness within two weeks. Our &quot;Velocity Pilot&quot; program identifies one critical bottleneck and delivers a functioning, secure agentic backbone.
               </p>
               <Link href="/pilot" className="inline-block rounded-full bg-white px-16 py-6 text-sm font-black text-indigo-600 transition-all hover:bg-neutral-100">
                  Request Pilot Slots

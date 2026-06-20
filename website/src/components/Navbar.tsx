@@ -45,6 +45,9 @@ export default function Navbar() {
           <Link href="/case-studies" className="hover:text-cyan-400 transition-colors duration-200">
             Case Studies
           </Link>
+          <Link href="/portfolio" className="hover:text-cyan-400 transition-colors duration-200">
+            Portfolio
+          </Link>
           <Link href="/projects" className="hover:text-cyan-400 transition-colors duration-200">
             Registry
           </Link>

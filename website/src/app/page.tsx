@@ -30,7 +30,7 @@ export default function Home() {
           </p>
           
           <div className="z-10 mt-16 flex flex-col sm:flex-row gap-8 w-full sm:w-auto px-10">
-            <Link href="/audit" className="group relative rounded-full bg-white px-12 py-6 text-sm font-black text-black transition-all hover:bg-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)]">
+            <Link href="/pilot" className="group relative rounded-full bg-white px-12 py-6 text-sm font-black text-black transition-all hover:bg-cyan-400 hover:shadow-[0_0_40px_rgba(34,211,238,0.4)]">
               INITIATE TECHNICAL AUDIT
               <ChevronRight size={18} className="inline-block ml-3 group-hover:translate-x-1 transition-transform" />
             </Link>
@@ -133,7 +133,7 @@ export default function Home() {
                     <h2 className="text-5xl md:text-8xl font-black tracking-tight text-white mb-8">Sector <br />Intelligence.</h2>
                     <p className="text-xl text-slate-500 font-light">We solve the specific manual friction nodes unique to high-volume industries.</p>
                  </div>
-                 <Link href="/audit" className="text-sm font-bold text-cyan-400 border-b border-cyan-400/30 pb-2 hover:border-cyan-400 transition-all">
+                 <Link href="/pilot" className="text-sm font-bold text-cyan-400 border-b border-cyan-400/30 pb-2 hover:border-cyan-400 transition-all">
                     Request Sector Audit →
                  </Link>
               </div>
@@ -223,7 +223,7 @@ export default function Home() {
                         </div>
                       </div>
                     ))}
-                    <Link href="/audit" className="inline-block mt-12 px-12 py-6 bg-black text-white text-xs font-black uppercase tracking-[0.3em] hover:bg-neutral-800 transition-all shadow-2xl">
+                    <Link href="/pilot" className="inline-block mt-12 px-12 py-6 bg-black text-white text-xs font-black uppercase tracking-[0.3em] hover:bg-neutral-800 transition-all shadow-2xl">
                        Begin Stage 01 Alignment
                     </Link>
                  </div>

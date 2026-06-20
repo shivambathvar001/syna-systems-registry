@@ -87,7 +87,7 @@ export default function Solutions() {
                    ))}
                 </div>
                 <div className="flex gap-6 mt-12">
-                   <Link href="/audit" className="inline-block rounded-full bg-white px-10 py-4 text-sm font-bold text-black transition-all hover:bg-neutral-200">
+                   <Link href="/pilot" className="inline-block rounded-full bg-white px-10 py-4 text-sm font-bold text-black transition-all hover:bg-neutral-200">
                       Request Practice Audit
                    </Link>
                    <Link href="https://github.com/shivambathvar001/syna-systems-registry" target="_blank" className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-cyan-400 group/link">
@@ -157,7 +157,7 @@ export default function Solutions() {
               <p className="text-xl text-indigo-100 font-light leading-relaxed mb-16 max-w-2xl">
                  We commit to production readiness within two weeks. Our "Velocity Pilot" program identifies one critical bottleneck and delivers a functioning, secure agentic backbone.
               </p>
-              <Link href="/audit" className="inline-block rounded-full bg-white px-16 py-6 text-sm font-black text-indigo-600 transition-all hover:bg-neutral-100">
+              <Link href="/pilot" className="inline-block rounded-full bg-white px-16 py-6 text-sm font-black text-indigo-600 transition-all hover:bg-neutral-100">
                  Request Pilot Slots
               </Link>
            </div>

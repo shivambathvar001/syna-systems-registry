@@ -1,6 +1,23 @@
-import sys
+# Syna Systems Outreach Log - Campaigns & Status
 
-# Syna Systems Outreach Log - Phase 3 Engagement
+## Active Campaigns
+
+### 1. Healthcare RCM (Denial Prevention)
+- **Target ICP:** Mid-market healthcare groups and hospitals scaling RCM teams.
+- **Trigger Signal:** Hiring for Denial Management, Appeals, or Clinical Documentation Improvement.
+- **Lead Source:** LinkedIn Jobs scraped via `lead_gen.py`.
+- **Total Leads:** 41 (Populated in `healthcare_leads.csv`).
+- **Template Sequence:** [healthcare_rcm_outreach.md](file:///D:/ShivamGem/SynaSystems/agency-brain/sales/healthcare_rcm_outreach.md)
+- **Variable Mapping Verification:**
+  - `{{company}}` -> CSV Column: `Organization`
+  - `{{firstName}}` -> To be enriched via Apollo (Targeting VP/Director of Revenue Cycle).
+  - `{{Signal_Role}}` -> CSV Column: `Signal_Role`
+  - `{{Primary_EHR_Placeholder}}` -> CSV Column: `Primary_EHR_Placeholder`
+- **Status:** **[READY FOR ENRICHMENT & IMPORT]** (Awaiting contact discovery).
+
+---
+
+## Historical Phase 3 Outreach Logs
 
 | Company | Sector | Signal | Assessment Sent | Status |
 | :--- | :--- | :--- | :--- | :--- |

@@ -1,0 +1,48 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Cloud Scheduler — syna-watchdog-trigger
+# Fires the Cloud Run Job every weekday at 9:00 AM IST (03:30 UTC)
+#
+# Note: Cloud Scheduler does not have a native YAML deploy format;
+#       this file is used as a reference config consumed by deploy.sh.
+#       The gcloud command in deploy.sh translates these values directly.
+# ─────────────────────────────────────────────────────────────────────────────
+
+scheduler:
+  name: syna-watchdog-trigger
+  description: "Trigger Syna Systems watchdog job at 9 AM IST on weekdays"
+
+  # ── Schedule ──────────────────────────────────────────────────────────────
+  # Cron format: minute hour day-of-month month day-of-week
+  # 30 3 * * 1-5 → 03:30 UTC = 09:00 IST (UTC+5:30)
+  schedule: "30 3 * * 1-5"
+  timeZone: "Asia/Kolkata"
+
+  # ── Target ────────────────────────────────────────────────────────────────
+  # Cloud Scheduler calls the Cloud Run Jobs API (HTTP POST) to trigger the job.
+  # The URL template is:
+  #   https://<REGION>-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/<PROJECT_NUMBER>/jobs/<JOB_NAME>:run
+  target:
+    type: http
+    httpMethod: POST
+    # Filled in by deploy.sh using gcloud project info
+    uri: "https://asia-south1-run.googleapis.com/apis/run.googleapis.com/v1/namespaces/${PROJECT_NUMBER}/jobs/syna-watchdog:run"
+    headers:
+      Content-Type: "application/json"
+    # Body can be empty JSON — Cloud Run Job ignores request body
+    body: "{}"
+
+  # ── Auth ──────────────────────────────────────────────────────────────────
+  # Cloud Scheduler uses OIDC token to authenticate to Cloud Run.
+  # The service account must have roles/run.invoker on the job.
+  auth:
+    type: oidc
+    # serviceAccountEmail: syna-watchdog-sa@syna-systems-moat.iam.gserviceaccount.com
+    # audience: https://asia-south1-run.googleapis.com
+
+  # ── Retry / Deadline ──────────────────────────────────────────────────────
+  retryConfig:
+    retryCount: 1
+    maxRetryDuration: "300s"   # 5 min max retry window
+    minBackoffDuration: "60s"
+    maxBackoffDuration: "120s"
+  attemptDeadline: "180s"      # 3 min to confirm the HTTP trigger responded

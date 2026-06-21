@@ -1,0 +1,61 @@
+# .dockerignore — excludes unnecessary files from the Docker build context.
+# Keeps image size small and prevents leaking secrets into the image layer.
+
+# ── Version control ───────────────────────────────────────────────────────────
+.git/
+.gitignore
+.gitattributes
+
+# ── Python artifacts ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ──────────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+*.env
+
+# ── Local secrets (NEVER include in image) ────────────────────────────────────
+*.key
+*.pem
+*.p12
+*.pfx
+service-account*.json
+credentials*.json
+secrets/
+
+# ── IDE / editor ──────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Node / frontend (not needed in Python container) ─────────────────────────
+node_modules/
+.next/
+out/
+*.lock
+
+# ── Test & CI artifacts ───────────────────────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# ── Deploy directory (don't copy deploy files into the image) ─────────────────
+deploy/
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+logs/

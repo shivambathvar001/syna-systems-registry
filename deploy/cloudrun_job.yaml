@@ -1,0 +1,98 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Cloud Run Job — syna-watchdog
+# API: run.googleapis.com/v1
+# Spec reference: https://cloud.google.com/run/docs/reference/rest/v1/namespaces.jobs
+# ─────────────────────────────────────────────────────────────────────────────
+
+apiVersion: run.googleapis.com/v1
+kind: Job
+metadata:
+  name: syna-watchdog
+  # Namespace is set dynamically by gcloud (matches GCP project number)
+  labels:
+    app: syna-watchdog
+    team: syna-systems
+    environment: production
+  annotations:
+    run.googleapis.com/launch-stage: BETA
+
+spec:
+  template:
+    metadata:
+      labels:
+        app: syna-watchdog
+
+    spec:
+      # ── Retry Policy ────────────────────────────────────────────────────────
+      # Cloud Run will retry the job up to 3 times on non-zero exit codes.
+      maxRetries: 3
+
+      # ── Task Timeout ────────────────────────────────────────────────────────
+      # 10 minutes is generous for a lead audit + Slack ping.
+      # Reduce if the job consistently completes faster.
+      timeoutSeconds: 600   # 10 minutes
+
+      template:
+        spec:
+          containers:
+            - name: watchdog
+              # Image is set at deploy time via gcloud run jobs update --image
+              # Placeholder format: gcr.io/<PROJECT_ID>/syna-watchdog:latest
+              image: gcr.io/syna-systems-moat/syna-watchdog:latest
+
+              # ── Resources ──────────────────────────────────────────────────
+              resources:
+                limits:
+                  memory: 512Mi
+                  cpu: "1"
+
+              # ── Environment Variables ───────────────────────────────────────
+              # SENSITIVE values should use secretKeyRef (Secret Manager).
+              # Non-sensitive values can be set as plain valueFrom or literal.
+              env:
+                # ── Operational config ──────────────────────────────────────
+                - name: STALE_DAYS
+                  value: "7"
+
+                - name: LEADS_CSV_PATH
+                  value: "/app/agency-brain/clients/healthcare_leads.csv"
+
+                - name: PYTHONUNBUFFERED
+                  value: "1"
+
+                # ── Secrets (populate via Secret Manager after project setup) ─
+                # Uncomment and replace <VERSION> after creating secrets:
+                #
+                # - name: SLACK_WEBHOOK_URL
+                #   valueFrom:
+                #     secretKeyRef:
+                #       name: slack-webhook-url
+                #       key: latest
+                #
+                # - name: INSTANTLY_API_KEY
+                #   valueFrom:
+                #     secretKeyRef:
+                #       name: instantly-api-key
+                #       key: latest
+                #
+                # - name: APOLLO_API_KEY
+                #   valueFrom:
+                #     secretKeyRef:
+                #       name: apollo-api-key
+                #       key: latest
+
+                # ── Temporary: plain-text placeholders (REPLACE before deploy) ─
+                - name: SLACK_WEBHOOK_URL
+                  value: "REPLACE_WITH_SLACK_WEBHOOK_URL"
+
+                - name: INSTANTLY_API_KEY
+                  value: "REPLACE_WITH_INSTANTLY_API_KEY"
+
+                - name: APOLLO_API_KEY
+                  value: "REPLACE_WITH_APOLLO_API_KEY"
+
+          # ── Service Account ─────────────────────────────────────────────────
+          # Create a dedicated SA with minimal permissions:
+          #   roles/secretmanager.secretAccessor
+          #   roles/logging.logWriter
+          # serviceAccountName: syna-watchdog-sa@syna-systems-moat.iam.gserviceaccount.com

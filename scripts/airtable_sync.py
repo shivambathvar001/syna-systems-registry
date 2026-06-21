@@ -1,4 +1,4 @@
-import Airtable from 'airtable';
+from airtable import Airtable
 import pandas as pd
 import os
 

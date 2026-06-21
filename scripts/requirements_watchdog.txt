@@ -1,0 +1,18 @@
+# Syna Systems — watchdog.py dependencies
+# Install with: pip install -r requirements_watchdog.txt
+
+# Core data handling
+pandas>=2.0.0
+
+# Browser automation (required by lead_gen.py when triggered)
+playwright>=1.44.0
+
+# Google Antigravity SDK — OPTIONAL (enables AI-assisted analysis mode)
+# Comment out if you only need standalone mode
+# google-antigravity>=0.1.0
+
+# Environment variable management (optional, for .env support)
+python-dotenv>=1.0.0
+
+# Standard library only beyond this point — no extra installs needed:
+# asyncio, argparse, csv, datetime, os, subprocess, sys, pathlib

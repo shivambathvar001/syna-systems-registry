@@ -82,10 +82,10 @@ async def scrape_linkedin_rcm_leads(keywords, locations):
                     
                     # Extract basic job cards
                     job_cards = await page.query_selector_all(".base-card")
-                    print(f"[SYNA_INFO] Found {len(job_cards)} job cards. Scraping top 10 details...")
+                    print(f"[SYNA_INFO] Found {len(job_cards)} job cards. Scraping top 5 details...")
                     
                     desc_page = await context.new_page()
-                    for card in job_cards[:10]:
+                    for card in job_cards[:5]:
                         try:
                             title_elem = await card.query_selector(".base-search-card__title")
                             company_elem = await card.query_selector(".base-search-card__subtitle")

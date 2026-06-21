@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import { ChevronRight, Cpu, ShieldCheck, Zap, BarChart3, Globe, Layers } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Syna Systems | Operational AI Infrastructure Partner",
+  description: "Syna Systems architects elite stateful agentic backbones and reliable zero-failure automation for logistics, healthcare, and enterprise revenue operations.",
+  keywords: ["Operational AI", "Agentic backbones", "Enterprise automation", "Zero-trust runtime", "Model Context Protocol", "Logistics automation", "RCM Rationale"],
+};
 
 export default function Home() {
   return (

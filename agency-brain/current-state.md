@@ -22,7 +22,7 @@
 3. **Operations & Sales Assets Provisioned:**
    - Authored the 14-Day Velocity Pilot framework document `14_day_delivery_framework.md` defining delivery timelines and SLA commitments.
    - Formulated the Cold Outreach Playbook `outreach_playbook.md` with multi-step sequence, cold email copy, and objection handling guidelines.
-   - Scaffolded legal contracts directory `operations/legal/` containing custom mutual Non-Disclosure Agreement `nda_template.md` and Master Services Agreement `msa_template.md`.
+   - Scaffolded legal contracts directory `operations/legal/` containing custom mutual Non-Disclosure Agreement `nda_template.md`, Master Services Agreement `msa_template.md`, Business Associate Agreement `baa_template.md`, Statement of Work `sow_template.md`, and Security & Compliance Whitepaper `security_compliance_whitepaper.md`.
 4. **Registry Graph Architecture:** Created `denial-resolution-engine.ts` LangGraph template specifying Payer Policy Retrieval, Clinical Evidence Synthesis, Appeal Drafting, and compliance screening nodes.
 5. **CI/CD Pipeline & Build Verification:** Configured GitHub Actions `.github/workflows/deploy.yml` to automatically lint, type-check (tsc), build verify, and deploy changes to Vercel. Successfully validated full Next.js production build (`npm run build` exits 0) containing 21 pre-rendered static paths.
 

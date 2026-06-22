@@ -35,6 +35,7 @@ export default function Navbar() {
     { href: "/case-studies", label: "Case Studies" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/projects", label: "Registry" },
+    { href: "/blog", label: "Logs" },
     { href: "/pilot", label: "Velocity Pilot" },
   ];
 

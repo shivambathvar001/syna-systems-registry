@@ -1,3 +1,21 @@
+# Agent Rules — Website (SynaSystems)
+
+## PROOF-DRIVEN VERIFICATION MANDATE (CRITICAL)
+- **No hallucination.** Do not assume success.
+- exit code 0 ≠ success. Read full stdout/stderr.
+- Every concluding response MUST include a Proof of Work block:
+```
+### Proof of Work
+- **Verification Commands Run**: <exact commands>
+- **Evidence Output**: <raw logs / HTTP status+payload / screenshot>
+- **Result**: [SUCCESS/FAILURE — verified by evidence, not assumption]
+```
+- Deployments: Pull logs + HTTP GET home → assert `200` + HTML check.
+- Code edits: Run linter/build. Show exact output. Run tests. Show pass/fail.
+- No Proof of Work = task NOT complete.
+
+---
+
 # Healthcare Revenue Cycle Management (RCM)
 ## Predictive Denial Management & Clinical Documentation Integrity
 

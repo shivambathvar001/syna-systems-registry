@@ -79,3 +79,17 @@
 - **Lead Gen Triggered:** Yes (threshold=50)
 - **Instantly.ai Sync:** exit_code=0 (simulated_ok)
 - **Log:** `agency-brain/operations/watchdog_log.csv`
+
+## Watchdog Report — 2026-06-22 23:10 UTC
+- **Leads (Total/HIGH):** 64 / 6
+- **Enrichment Gap:** 23 leads missing Apollo/LinkedIn data
+- **Lead Gen Triggered:** Yes (threshold=50)
+- **Instantly.ai Sync:** exit_code=0 (simulated_ok)
+- **Log:** `agency-brain/operations/watchdog_log.csv`
+
+## Watchdog Report — 2026-06-22 23:26 UTC
+- **Leads (Total/HIGH):** 64 / 6
+- **Enrichment Gap:** 0 leads missing Apollo/LinkedIn data
+- **Lead Gen Triggered:** Yes (threshold=50)
+- **Instantly.ai Sync:** exit_code=0 (simulated_ok)
+- **Log:** `agency-brain/operations/watchdog_log.csv`

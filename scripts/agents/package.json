@@ -1,0 +1,19 @@
+{
+  "name": "syna-agents",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "prospect": "tsx prospect_research.ts",
+    "audit": "tsx audit_generator.ts",
+    "outreach": "tsx outreach_personalizer.ts",
+    "pipeline": "tsx pipeline.ts"
+  },
+  "dependencies": {
+    "openai": "^4.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  }
+}

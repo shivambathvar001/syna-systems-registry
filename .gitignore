@@ -1,3 +1,10 @@
 .vercel
 .env*
 *.env*
+Secrets.txt
+.gemini/
+agency-brain/dossiers/
+agency-brain/audits/
+agency-brain/outreach/
+node_modules/
+dist/

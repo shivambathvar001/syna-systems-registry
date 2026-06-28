@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex min-h-screen flex-col items-center bg-[#020617] text-slate-200 grid-bg">
         
         {/* SECTION 1: HERO - Dynamic & Technical */}
-        <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-6 pt-20">
+        <section className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-hidden px-6 pt-20 text-center">
           <div className="absolute top-1/4 left-1/4 h-[500px] w-[500px] rounded-full bg-indigo-500/10 blur-[120px] animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 h-[400px] w-[400px] rounded-full bg-cyan-500/10 blur-[100px] animate-pulse"></div>
           
@@ -25,13 +25,13 @@ export default function Home() {
             Elite Agentic Infrastructure for the High-Friction Enterprise
           </div>
           
-          <h1 className="z-10 max-w-6xl text-6xl font-black tracking-tighter sm:text-9xl leading-[0.9] text-white">
+          <h1 className="z-10 max-w-6xl text-6xl font-black tracking-tighter sm:text-9xl leading-[0.9] text-white text-center">
             Architecting <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-500">Autonomous</span> <br />
             <span className="glow-text-cyan">Backbones.</span>
           </h1>
           
-          <p className="z-10 mt-12 max-w-3xl text-lg md:text-2xl text-slate-400 leading-relaxed font-light">
+          <p className="z-10 mt-12 max-w-3xl text-lg md:text-2xl text-slate-400 leading-relaxed font-light text-center">
             We replace manual operational bottlenecks with high-precision, stateful agentic workflows. 
             Syna Systems moves enterprises beyond experimental chat into mission-critical, self-healing automation.
           </p>
@@ -85,7 +85,7 @@ export default function Home() {
           <div className="mx-auto max-w-7xl relative">
             <div className="absolute top-0 right-0 h-full w-1/2 bg-[radial-gradient(circle_at_top_right,_var(--accent-glow)_0%,_transparent_70%)] opacity-30"></div>
             
-            <div className="max-w-3xl mb-32">
+            <div className="max-w-3xl mx-auto text-center mb-32">
               <p className="text-xs font-bold uppercase tracking-[0.3em] text-cyan-500 mb-6">The Syna Stack</p>
               <h2 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-8">Engineering for <br />Stateful Reliability.</h2>
               <p className="text-xl text-slate-400 font-light leading-relaxed">
@@ -135,8 +135,8 @@ export default function Home() {
         {/* SECTION 4: SECTOR DYNAMICS - Industry Sync */}
         <section className="w-full py-48 bg-[#050505] px-8 border-y border-slate-900">
            <div className="mx-auto max-w-7xl">
-              <div className="flex flex-col md:flex-row justify-between items-end gap-12 mb-32">
-                 <div className="max-w-2xl">
+              <div className="flex flex-col items-center text-center mb-32">
+                 <div className="max-w-2xl mx-auto mb-8">
                     <h2 className="text-5xl md:text-8xl font-black tracking-tight text-white mb-8">Sector <br />Intelligence.</h2>
                     <p className="text-xl text-slate-500 font-light">We solve the specific manual friction nodes unique to high-volume industries.</p>
                  </div>

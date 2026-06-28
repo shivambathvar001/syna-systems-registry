@@ -13,7 +13,7 @@
   - `{{firstName}}` -> To be enriched via Apollo (Targeting VP/Director of Revenue Cycle).
   - `{{Signal_Role}}` -> CSV Column: `Signal_Role`
   - `{{Primary_EHR_Placeholder}}` -> CSV Column: `Primary_EHR_Placeholder`
-- **Status:** **[READY FOR ENRICHMENT & IMPORT]** (Awaiting contact discovery).
+- **Status:** **[PIPELINE READY]** (Test lead generated successfully, ready for bulk run of all 64 target prospects).
 
 ---
 
@@ -26,3 +26,4 @@
 | FinEdge SaaS | B2B SaaS | Scaling SDR Team | 2026-06-14 | [DISPATCHED] |
 | GlobalTalent | Recruitment | Admin Assistant Hiring | [TBD] | [IDLE] |
 | ShipRight | Logistics | Ops Manager Hiring | [TBD] | [IDLE] |
+| Mile Bluff Medical Center | Healthcare RCM | Denial Specialist | 2026-06-28 | [AGENT_GENERATED] |

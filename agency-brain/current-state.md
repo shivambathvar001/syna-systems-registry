@@ -25,16 +25,13 @@
    - Scaffolded legal contracts directory `operations/legal/` containing custom mutual Non-Disclosure Agreement `nda_template.md`, Master Services Agreement `msa_template.md`, Business Associate Agreement `baa_template.md`, Statement of Work `sow_template.md`, and Security & Compliance Whitepaper `security_compliance_whitepaper.md`.
 4. **Registry Graph Architecture:** Created `denial-resolution-engine.ts` LangGraph template specifying Payer Policy Retrieval, Clinical Evidence Synthesis, Appeal Drafting, and compliance screening nodes.
 5. **CI/CD Pipeline & Build Verification:** Configured GitHub Actions `.github/workflows/deploy.yml` to automatically lint, type-check (tsc), build verify, and deploy changes to Vercel. Successfully validated full Next.js production build (`npm run build` exits 0) containing 21 pre-rendered static paths.
+6. **Agent Pipeline Build (Items 6, 7, 8):** Built and integrated 3 TypeScript agents under `scripts/agents/` — `prospect_research.ts` (Item 6), `audit_generator.ts` (Item 7), and `outreach_personalizer.ts` (Item 8) with the master orchestrator `pipeline.ts`. Connected to OpenRouter dynamic free router (`openrouter/free`) for robust API calls and automatic CSV generation for Instantly.ai bulk import.
+7. **Whitepaper Finalization (Item 10):** Transformed all 3 RCM whitepapers into high-quality articles in `src/data/whitepapers.ts` and deployed dynamic Next.js routes `/whitepapers` and `/whitepapers/[slug]` supporting print layouts via a specialized `PrintButton` client component, passing 100% type-safety checks.
 
 ## Next Steps
-1. **SEO & Content:** Upload 10 high SEO and technical value-based blogs. [DONE]
-2. **UX/UI Fixes:** Resolve mobile styling/design issues on Syna website. [DONE]
-3. **Lead Capture QA & Airtable Form Sync:** Connect pilot intake form submission to Airtable API via API route and verify data recording. [DONE]
-4. **Delivery Framework:** Map the 14-day velocity pilot delivery execution framework. [DONE]
-5. **LinkedIn Authority:** Launch LinkedIn account posting and prospecting. [DONE - scripts verified and weekly drafts generated]
-6. **Lead Sourcing:** Identify top 50 high-potential enterprise leads. [DONE - 64 target prospects scraped and recorded]
-7. **Outreach Playbook:** Define physical/virtual first-impression strategies to get attention and sign contracts. [DONE]
-8. **Ops & Legal:** Standardize legal compliance, contracts framework (NDA, MSA), and client communication flow. [DONE]
+1. **Launch Sequence:** Run the master agent pipeline on all 6 scored `HIGH` leads.
+2. **Instantly Integration:** Import generated `instantly_import.csv` into Instantly.ai and run a test delivery sequence.
+3. **LinkedIn Outreach:** Initiate automatic drafting script and begin manual publication.
 
 ## LinkedIn Authority Series (NEW)
 - **Status:** READY TO LAUNCH (Series Start: 2026-06-22)

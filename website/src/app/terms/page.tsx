@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Airwalk AI",
-  description: "Read the Terms of Service for Airwalk AI custom agentic solutions and 14-day velocity pilot projects.",
+  title: "Terms of Service | Syna Systems",
+  description: "Read the Terms of Service for Syna Systems custom agentic solutions and 14-day velocity pilot projects.",
 };
 
 export default function TermsPage() {
@@ -19,14 +19,14 @@ export default function TermsPage() {
         <section className="space-y-6 text-sm text-slate-400 font-light leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10">1. Acceptance of Terms</h2>
           <p>
-            By executing a Velocity Pilot engagement or utilizing Airwalk AI open-source codebases, you agree to
+            By executing a Velocity Pilot engagement or utilizing Syna Systems open-source codebases, you agree to
             be bound by these terms. If you are accepting on behalf of an enterprise or hospital entity, you represent
             that you have full regulatory and organizational authority.
           </p>
 
           <h2 className="text-2xl font-bold text-white mt-10">2. 14-Day Velocity Pilot SLA</h2>
           <p>
-            Airwalk AI commits to delivering a functional MVP in 14 days following client provisioning of secure API hooks.
+            Syna Systems commits to delivering a functional MVP in 14 days following client provisioning of secure API hooks.
             In the event that the system parameters fail to compile or deploy within the agreed schedule, any upfront pilot
             deposits will be fully returned.
           </p>
@@ -39,7 +39,7 @@ export default function TermsPage() {
 
           <h2 className="text-2xl font-bold text-white mt-10">4. Liability Disclaimer</h2>
           <p>
-            Airwalk AI operates strictly as an infrastructure provider. We do not adjudicate claims, write medical codes,
+            Syna Systems operates strictly as an infrastructure provider. We do not adjudicate claims, write medical codes,
             or submit legal appeals directly. All actions processed by autonomous agents must be confirmed by human
             operators via the supplied verification interfaces.
           </p>
@@ -48,3 +48,4 @@ export default function TermsPage() {
     </main>
   );
 }
+

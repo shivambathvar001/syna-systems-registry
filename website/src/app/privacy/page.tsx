@@ -1,8 +1,8 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Airwalk AI",
-  description: "Learn how Airwalk AI protects client data, masked PHI/PII ingestion, and HIPAA data compliance boundaries.",
+  title: "Privacy Policy | Syna Systems",
+  description: "Learn how Syna Systems protects client data, masked PHI/PII ingestion, and HIPAA data compliance boundaries.",
 };
 
 export default function PrivacyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
         <section className="space-y-6 text-sm text-slate-400 font-light leading-relaxed">
           <h2 className="text-2xl font-bold text-white mt-10">1. Data Sovereignty & Protection</h2>
           <p>
-            At Airwalk AI, we implement security-by-design principles across all intelligent agent runtimes.
+            At Syna Systems, we implement security-by-design principles across all intelligent agent runtimes.
             All client integrations operate inside client-owned virtual private clouds (VPC). We do not collect,
             aggregate, or lease proprietary enterprise data, clinical records, or client database transactions.
           </p>
@@ -40,10 +40,11 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-bold text-white mt-10">4. Policy Changes & Contact</h2>
           <p>
             We regularly update our privacy parameters to maintain alignment with HIPAA, SOC2 Type II, and regional
-            data sovereignty regulations. For compliance inquiries, contact security@airwalk.ai.
+            data sovereignty regulations. For compliance inquiries, contact security@syna.systems.
           </p>
         </section>
       </div>
     </main>
   );
 }
+

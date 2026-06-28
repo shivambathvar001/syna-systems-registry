@@ -27,11 +27,14 @@
 5. **CI/CD Pipeline & Build Verification:** Configured GitHub Actions `.github/workflows/deploy.yml` to automatically lint, type-check (tsc), build verify, and deploy changes to Vercel. Successfully validated full Next.js production build (`npm run build` exits 0) containing 21 pre-rendered static paths.
 6. **Agent Pipeline Build (Items 6, 7, 8):** Built and integrated 3 TypeScript agents under `scripts/agents/` — `prospect_research.ts` (Item 6), `audit_generator.ts` (Item 7), and `outreach_personalizer.ts` (Item 8) with the master orchestrator `pipeline.ts`. Connected to OpenRouter dynamic free router (`openrouter/free`) for robust API calls and automatic CSV generation for Instantly.ai bulk import.
 7. **Whitepaper Finalization (Item 10):** Transformed all 3 RCM whitepapers into high-quality articles in `src/data/whitepapers.ts` and deployed dynamic Next.js routes `/whitepapers` and `/whitepapers/[slug]` supporting print layouts via a specialized `PrintButton` client component, passing 100% type-safety checks.
+8. **Agency Operating System (AOS) v2.0:** Rebuilt and organized the entire Agency Brain into 13 logical folders with 30-40 root documents answering specific strategic, technical, and operational questions.
+9. **Website Docs Portal & ROI Tool:** Replaced all marketing pages with a developer-documentation-focused web application. Displays AOS v2.0 documents via a custom Markdown parser, includes an interactive RCM Recovery calculator, and passes Next.js production build validation (exits 0).
 
 ## Next Steps
-1. **Launch Sequence:** Run the master agent pipeline on all 6 scored `HIGH` leads.
-2. **Instantly Integration:** Import generated `instantly_import.csv` into Instantly.ai and run a test delivery sequence.
-3. **LinkedIn Outreach:** Initiate automatic drafting script and begin manual publication.
+1. **Scraping & Lead Generation:** Execute `lead_gen.py` to generate and score additional high-friction healthcare RCM leads.
+2. **Personalization Sequence:** Run the master agent pipeline on scored leads to produce tailored cold outreach email drafts.
+3. **Instantly Integration:** Synchronize enriched leads into active Instantly campaigns for automated pilot outreach.
+
 
 ## LinkedIn Authority Series (NEW)
 - **Status:** READY TO LAUNCH (Series Start: 2026-06-22)

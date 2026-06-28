@@ -1,10 +1,9 @@
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 import { Cpu, Terminal, ShieldAlert, Workflow, Database, RefreshCw, BarChart4, ChevronRight } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Practices | Syna Systems Architecture & Engineering",
+  title: "Practices | Airwalk AI Architecture & Engineering",
   description: "Specialized engineering practices for the autonomous enterprise. Intelligent Document Processing, Revenue Operations, and Zero-Trust Governance.",
 };
 
@@ -50,8 +49,7 @@ export default function Solutions() {
 
   return (
     <>
-      <Navbar />
-      <main className="flex min-h-screen flex-col items-center bg-[#020617] text-slate-200 grid-bg">
+      <main className="flex min-h-screen flex-col items-center bg-[#020617] text-slate-200 grid-bg pt-20">
         
         {/* SECTION 1: HERO */}
         <section className="relative w-full flex flex-col items-center justify-center px-6 pt-48 pb-32 text-center overflow-hidden">
@@ -63,7 +61,7 @@ export default function Solutions() {
             Engineering <br /><span className="glow-text-indigo">Practices.</span>
           </h1>
           <p className="z-10 text-xl text-slate-500 font-light leading-relaxed max-w-2xl mx-auto">
-            Syna Systems deploys mission-critical infrastructure across three core technical domains.
+            Airwalk AI deploys mission-critical infrastructure across three core technical domains.
           </p>
         </section>
 
@@ -89,9 +87,6 @@ export default function Solutions() {
                 <div className="flex gap-6 mt-12">
                    <Link href="/pilot" className="inline-block rounded-full bg-white px-10 py-4 text-sm font-bold text-black transition-all hover:bg-neutral-200">
                       Request Practice Audit
-                   </Link>
-                   <Link href="https://github.com/shivambathvar001/syna-systems-registry" target="_blank" className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-cyan-400 group/link">
-                      Audit Codebase <ChevronRight size={14} className="group-hover/link:translate-x-1 transition-all" />
                    </Link>
                 </div>
               </div>
@@ -119,7 +114,7 @@ export default function Solutions() {
         {/* SECTION 5: PERFORMANCE MATRIX */}
         <section className="w-full py-48 px-8">
            <div className="mx-auto max-w-5xl text-center">
-              <h2 className="text-4xl md:text-7xl font-black tracking-tight text-white mb-12">Legacy RPA <br /><span className="text-slate-700 uppercase italic">vs</span> <br />Syna Systems.</h2>
+              <h2 className="text-4xl md:text-7xl font-black tracking-tight text-white mb-12">Legacy RPA <br /><span className="text-slate-700 uppercase italic">vs</span> <br />Airwalk AI.</h2>
               <div className="overflow-x-auto">
                  <table className="w-full text-left border-collapse border-t border-slate-900">
                     <thead>
@@ -162,35 +157,6 @@ export default function Solutions() {
               </Link>
            </div>
         </section>
-
-        {/* FOOTER */}
-        <footer className="w-full border-t border-slate-900 py-32 px-8 bg-[#020617]">
-          <div className="mx-auto max-w-7xl grid grid-cols-1 md:grid-cols-4 gap-20">
-            <div className="md:col-span-2">
-               <div className="text-3xl font-black tracking-tighter text-white mb-8 italic uppercase">SYNA SYSTEMS</div>
-               <p className="text-slate-500 max-w-xs leading-relaxed font-light">
-                 High-Precision Infrastructure for the Autonomous Enterprise.
-               </p>
-            </div>
-            <div className="space-y-8">
-               <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600">Company</h4>
-               <ul className="space-y-4 text-sm font-medium text-slate-400">
-                  <li><Link href="/about" className="hover:text-cyan-400 transition-colors">Our Ethos</Link></li>
-                  <li><Link href="/insights" className="hover:text-cyan-400 transition-colors">Intelligence</Link></li>
-                  <li><Link href="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link></li>
-               </ul>
-            </div>
-            <div className="space-y-8">
-               <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600">Offices</h4>
-               <p className="text-xs text-slate-600 leading-relaxed font-mono">
-                  LONDON_UK <br />
-                  SINGAPORE_SG <br />
-                  REMOTE_DEPLOYMENT
-               </p>
-            </div>
-          </div>
-        </footer>
-
       </main>
     </>
   );

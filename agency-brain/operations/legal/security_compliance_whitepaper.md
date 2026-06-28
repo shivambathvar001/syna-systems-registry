@@ -1,13 +1,13 @@
 # Security Architecture & Compliance Whitepaper
-**Syna Systems | Post-Denial Resolution Engine**
+**Airwalk AI | Post-Denial Resolution Engine**
 
-This document describes the security controls, data isolation boundaries, and compliance architectures governing the Syna Post-Denial Resolution Engine (the "Engine") when integrated with hospital EHR systems.
+This document describes the security controls, data isolation boundaries, and compliance architectures governing the Airwalk Post-Denial Resolution Engine (the "Engine") when integrated with hospital EHR systems.
 
 ---
 
 ## 1. Zero-Trust Data Scrubbing Architecture
 
-To guarantee absolute compliance with HIPAA and patient privacy standards, Syna Systems utilizes a **Zero-Trust Proxy Gateway** deployed inside the client’s local infrastructure firewall.
+To guarantee absolute compliance with HIPAA and patient privacy standards, Airwalk AI utilizes a **Zero-Trust Proxy Gateway** deployed inside the client’s local infrastructure firewall.
 
 ```
           [ Local EHR Database ]
@@ -18,7 +18,7 @@ To guarantee absolute compliance with HIPAA and patient privacy standards, Syna 
                     +---> [ AES-256 Local PHI Token Vault ]
                     |
                     v (Scrubbed Payload: Cryptographic Tokens Only)
-           [ Syna Cloud Engine ] (AI clinical synthesis & graph routing)
+           [ Airwalk Cloud Engine ] (AI clinical synthesis & graph routing)
                     |
                     v (Scrubbed Draft Letter)
         [ Local Proxy Gateway (Reconstructor) ]

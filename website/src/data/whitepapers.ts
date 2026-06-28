@@ -26,7 +26,7 @@ export const whitepapers: Whitepaper[] = [
 # Predictive Denial Management
 ## Architectural Blueprint: The Operational AI Transformation of Healthcare RCM
 
-*Author: Syna Systems Engineering Team*
+*Author: Airwalk AI Engineering Team*
 *Classification: Public Distribution*
 
 ---
@@ -35,7 +35,7 @@ export const whitepapers: Whitepaper[] = [
 
 The modern healthcare revenue cycle is under siege. Legacy systems and manual workflows are failing to keep pace with increasingly complex payer rules, resulting in an industry-wide denial rate that frequently exceeds 10-15%. For a $1B healthcare system, even a 1% reduction in denials translates to **$10M in recovered revenue**.
 
-Traditional "RPA bots" and simple "AI wrappers" have failed because they lack **contextual intelligence** and **operational reliability**. Syna Systems introduces the **Predictive Denial Management System (PDMS)** — not a tool, but an **Operational AI Infrastructure** designed to eliminate denials at the source.
+Traditional "RPA bots" and simple "AI wrappers" have failed because they lack **contextual intelligence** and **operational reliability**. Airwalk AI introduces the **Predictive Denial Management System (PDMS)** — not a tool, but an **Operational AI Infrastructure** designed to eliminate denials at the source.
 
 > **The core thesis:** Denials are not a billing problem. They are a documentation integrity problem. Fix the upstream data, and 67% of denials disappear before they ever occur.
 
@@ -139,7 +139,7 @@ The final gatekeeper. It assigns a **Denial Risk Score** to every claim before s
 
 ## Why This Is Different
 
-| Traditional RPA | Syna PDMS |
+| Traditional RPA | Airwalk PDMS |
 |---|---|
 | Stateless — no memory between tasks | Stateful — full claim lifecycle tracking |
 | Rule-based only | Rules + pattern recognition + payer modeling |
@@ -150,9 +150,9 @@ The final gatekeeper. It assigns a **Denial Risk Score** to every claim before s
 
 ---
 
-*Syna Systems: We don't build agents. We build the infrastructure that makes them work.*
+*Airwalk AI: We don't build agents. We build the infrastructure that makes them work.*
 
-*For a personalized operational audit of your RCM infrastructure, contact our team at pilot@synasystems.com*
+*For a personalized operational audit of your RCM infrastructure, contact our team at pilot@airwalk.ai*
     `
   },
   {
@@ -169,14 +169,14 @@ The final gatekeeper. It assigns a **Denial Risk Score** to every claim before s
 # Stateful Agent Architecture Patterns
 ## Three Core Patterns for Production-Grade Agentic Workflows
 
-*Author: Syna Systems Engineering Team*
+*Author: Airwalk AI Engineering Team*
 *Classification: Public Distribution*
 
 ---
 
 ## Executive Summary
 
-Most AI implementations fail because they lack **state** and **observability**. This paper codifies the three core architecture patterns used by Syna Systems to build production-grade agentic workflows that are reliable, defensible, and scalable.
+Most AI implementations fail because they lack **state** and **observability**. This paper codifies the three core architecture patterns used by Airwalk AI to build production-grade agentic workflows that are reliable, defensible, and scalable.
 
 The patterns described here are not theoretical. They are battle-tested across healthcare revenue cycle operations, where a single hallucination or dropped state can cost $10,000+ in lost revenue.
 
@@ -280,8 +280,8 @@ The difference between a demo and a production system is not the model — it's 
 
 ---
 
-*Syna Systems: Operational AI Infrastructure Partner*
-*For architecture consultation, contact: engineering@synasystems.com*
+*Airwalk AI: Operational AI Infrastructure Partner*
+*For architecture consultation, contact: engineering@airwalk.ai*
     `
   },
   {
@@ -298,14 +298,14 @@ The difference between a demo and a production system is not the model — it's 
 # Security & Compliance Framework
 ## Zero-Trust Architecture for HIPAA-Compliant AI Operations
 
-*Author: Syna Systems Security Engineering Team*
+*Author: Airwalk AI Security Engineering Team*
 *Classification: Public Distribution*
 
 ---
 
 ## Executive Summary
 
-In healthcare AI, "security" is not a feature — it is the foundation. This whitepaper describes the complete security architecture governing Syna Systems' operational AI infrastructure when deployed in hospital and healthcare group environments.
+In healthcare AI, "security" is not a feature — it is the foundation. This whitepaper describes the complete security architecture governing Airwalk AI's operational AI infrastructure when deployed in hospital and healthcare group environments.
 
 Our core principle: **Patient data never touches the AI processing layer in identifiable form.** Every interaction passes through a Zero-Trust Proxy Gateway that strips, tokenizes, and reconstructs data at the boundary.
 
@@ -313,7 +313,7 @@ Our core principle: **Patient data never touches the AI processing layer in iden
 
 ## 1. Zero-Trust Data Scrubbing Architecture
 
-To guarantee absolute compliance with HIPAA and patient privacy standards, Syna Systems deploys a **Zero-Trust Proxy Gateway** inside the client's local infrastructure firewall.
+To guarantee absolute compliance with HIPAA and patient privacy standards, Airwalk AI deploys a **Zero-Trust Proxy Gateway** inside the client's local infrastructure firewall.
 
 ### Data Flow Architecture
 \`\`\`
@@ -325,7 +325,7 @@ To guarantee absolute compliance with HIPAA and patient privacy standards, Syna 
                    +---> [ AES-256 Local PHI Token Vault ]
                    |
                    v (Scrubbed Payload: Cryptographic Tokens Only)
-          [ Syna Cloud Engine ]
+          [ Airwalk Cloud Engine ]
                    |     (AI clinical synthesis & graph routing)
                    v (Scrubbed Draft Letter)
        [ Local Proxy Gateway (Reconstructor) ]
@@ -337,7 +337,7 @@ To guarantee absolute compliance with HIPAA and patient privacy standards, Syna 
 
 ### How It Works
 1. **Inbound scrubbing:** The Gateway intercepts FHIR API payloads from the EHR and replaces all PHI (names, DOBs, MRNs, SSNs) with cryptographic tokens stored in a local AES-256 encrypted vault.
-2. **AI processing:** The Syna Cloud Engine receives only tokenized, de-identified data. The AI cannot reconstruct patient identity from tokens.
+2. **AI processing:** The Airwalk Cloud Engine receives only tokenized, de-identified data. The AI cannot reconstruct patient identity from tokens.
 3. **Outbound reconstruction:** Generated outputs (appeal letters, audit reports) return through the Gateway, which re-binds patient demographics from the local vault.
 4. **Human review:** The final output — now containing PHI — enters a human triage queue for review and approval before any external transmission.
 
@@ -374,7 +374,7 @@ To guarantee absolute compliance with HIPAA and patient privacy standards, Syna 
 
 ## 3. SOC2 Type II Framework
 
-The Syna Systems platform follows SOC2 Trust Service Criteria across all five principles:
+The Airwalk AI platform follows SOC2 Trust Service Criteria across all five principles:
 
 | Principle | Implementation |
 |---|---|
@@ -435,9 +435,9 @@ Each AI agent operates within a strict permission boundary:
 
 ---
 
-*Syna Systems: Security is not a feature we add. It is the foundation we build on.*
+*Airwalk AI: Security is not a feature we add. It is the foundation we build on.*
 
-*For a security architecture review or BAA discussion, contact: security@synasystems.com*
+*For a security architecture review or BAA discussion, contact: security@airwalk.ai*
     `
   }
 ];

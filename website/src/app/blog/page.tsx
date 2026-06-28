@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Sparkles, ArrowRight, BookOpen, Clock, Calendar } from "lucide-react";
 
 export const metadata = {
-  title: "Engineering Logs & Technical Blogs | Syna Systems",
+  title: "Insights Journal & Technical Blogs | Airwalk AI",
   description: "Read technical breakdowns on EHR integrations, HIPAA-compliant data pipeline design, and AI reliability frameworks in revenue cycle operations.",
   keywords: "RCM, AI reliability, EHR integrations, HIPAA compliance, healthcare technology",
 };

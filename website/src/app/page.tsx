@@ -1,19 +1,16 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import { ChevronRight, Cpu, ShieldCheck, Zap, BarChart3, Globe, Layers } from "lucide-react";
+import { ChevronRight, Cpu, ShieldCheck, BarChart3, Globe, Layers } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Syna Systems | Operational AI Infrastructure Partner",
-  description: "Syna Systems architects elite stateful agentic backbones and reliable zero-failure automation for logistics, healthcare, and enterprise revenue operations.",
+  title: "Airwalk AI | Operational AI Infrastructure Partner",
+  description: "Airwalk AI architects elite stateful agentic backbones and reliable zero-failure automation for logistics, healthcare, and enterprise revenue operations.",
   keywords: ["Operational AI", "Agentic backbones", "Enterprise automation", "Zero-trust runtime", "Model Context Protocol", "Logistics automation", "RCM Rationale"],
 };
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main className="flex min-h-screen flex-col items-center bg-[#020617] text-slate-200 grid-bg">
         
         {/* SECTION 1: HERO - Dynamic & Technical */}
@@ -33,7 +30,7 @@ export default function Home() {
           
           <p className="z-10 mt-12 max-w-3xl text-lg md:text-2xl text-slate-400 leading-relaxed font-light text-center">
             We replace manual operational bottlenecks with high-precision, stateful agentic workflows. 
-            Syna Systems moves enterprises beyond experimental chat into mission-critical, self-healing automation.
+            Airwalk AI moves enterprises beyond experimental chat into mission-critical, self-healing automation.
           </p>
           
           <div className="z-10 mt-16 flex flex-col sm:flex-row gap-8 w-full sm:w-auto px-10">
@@ -74,7 +71,7 @@ export default function Home() {
                 <ShieldCheck className="text-emerald-500 mb-4" size={40} />
                 <h3 className="text-5xl font-black text-white tracking-tighter">&lt; 14 Days</h3>
                 <p className="text-xs font-bold uppercase tracking-widest text-slate-500">Velocity to ROI</p>
-                <p className="text-sm text-slate-400 font-light leading-relaxed">Average timeline for a Syna Systems &quot;Velocity Pilot&quot; to demonstrate measurable efficiency gains in production environments.</p>
+                <p className="text-sm text-slate-400 font-light leading-relaxed">Average timeline for an Airwalk AI &quot;Velocity Pilot&quot; to demonstrate measurable efficiency gains in production environments.</p>
               </div>
             </div>
           </div>
@@ -86,7 +83,7 @@ export default function Home() {
             <div className="absolute top-0 right-0 h-full w-1/2 bg-[radial-gradient(circle_at_top_right,_var(--accent-glow)_0%,_transparent_70%)] opacity-30"></div>
             
             <div className="max-w-3xl mx-auto text-center mb-32">
-              <p className="text-xs font-bold uppercase tracking-[0.3em] text-cyan-500 mb-6">The Syna Stack</p>
+              <p className="text-xs font-bold uppercase tracking-[0.3em] text-cyan-500 mb-6">The Airwalk Stack</p>
               <h2 className="text-5xl md:text-7xl font-black tracking-tight text-white mb-8">Engineering for <br />Stateful Reliability.</h2>
               <p className="text-xl text-slate-400 font-light leading-relaxed">
                 Most AI agencies build &quot;wrappers.&quot; We architect infrastructure. Our deployments utilize a three-layer security and orchestration stack designed for zero-failure operations.
@@ -237,53 +234,6 @@ export default function Home() {
               </div>
            </div>
         </section>
-
-        {/* FOOTER - Professional & Extensive */}
-        <footer className="w-full border-t border-slate-900 py-32 px-8 bg-[#020617] relative z-10">
-          <div className="mx-auto max-w-7xl">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-20">
-              <div className="md:col-span-2">
-                 <div className="flex items-center gap-4 mb-10">
-                    <Image src="/logo-fancy.svg" alt="Syna Systems" width={48} height={48} className="opacity-80" />
-                    <div className="text-3xl font-black tracking-tighter text-white">SYNA SYSTEMS</div>
-                 </div>
-                 <p className="text-slate-500 max-w-sm leading-relaxed font-light text-lg">
-                   Global Operational Infrastructure Partner. <br />
-                   We architect the self-healing enterprise.
-                 </p>
-              </div>
-              <div className="space-y-8">
-                 <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600">Strategic Practices</h4>
-                 <ul className="space-y-4 text-sm font-medium text-slate-400">
-                    <li><Link href="/solutions" className="hover:text-cyan-400 transition-colors">Logistics & Supply Chain</Link></li>
-                    <li><Link href="/solutions" className="hover:text-cyan-400 transition-colors">Revenue Operations</Link></li>
-                    <li><Link href="/solutions" className="hover:text-cyan-400 transition-colors">Managed Support Hubs</Link></li>
-                    <li><Link href="/security" className="hover:text-cyan-400 transition-colors">Zero-Trust Governance</Link></li>
-                 </ul>
-              </div>
-              <div className="space-y-8">
-                 <h4 className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-600">Intelligence</h4>
-                 <ul className="space-y-4 text-sm font-medium text-slate-400">
-                    <li><Link href="/insights" className="hover:text-cyan-400 transition-colors">Architecture Reports</Link></li>
-                    <li><Link href="/case-studies" className="hover:text-cyan-400 transition-colors">Impact Records</Link></li>
-                    <li><Link href="/about" className="hover:text-cyan-400 transition-colors">Our Ethos</Link></li>
-                    <li><Link href="/contact" className="hover:text-cyan-400 transition-colors">Technical Inquiries</Link></li>
-                 </ul>
-              </div>
-            </div>
-            
-            <div className="mt-32 pt-12 border-t border-slate-900/50 flex flex-col md:flex-row justify-between items-center gap-8">
-               <div className="flex gap-12 text-[10px] font-bold uppercase tracking-widest text-slate-700">
-                  <span>© 2026 Syna Systems</span>
-                  <span>All Rights Reserved</span>
-                  <span>London | Singapore | Remote</span>
-               </div>
-               <div className="text-[10px] font-black tracking-widest text-slate-500">
-                  BUILT WITH PRECISION ENGINEERING
-               </div>
-            </div>
-          </div>
-        </footer>
 
       </main>
     </>

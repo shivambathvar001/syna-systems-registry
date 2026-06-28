@@ -30,15 +30,10 @@ export default function Navbar() {
   }, [pathname]);
 
   const navLinks = [
-    { href: "/", label: "Home" },
     { href: "/solutions", label: "Practices" },
     { href: "/case-studies", label: "Case Studies" },
-    { href: "/portfolio", label: "Portfolio" },
-    { href: "/projects", label: "Registry" },
-    { href: "/blog", label: "Logs" },
     { href: "/whitepapers", label: "Research" },
-    { href: "/pilot/demo", label: "Demo" },
-    { href: "/pilot", label: "Velocity Pilot" },
+    { href: "/blog", label: "Insights" },
   ];
 
   return (
@@ -48,7 +43,7 @@ export default function Navbar() {
           scrolled
             ? "border-slate-800 bg-[#020617]/90 backdrop-blur-lg py-4 shadow-[0_4px_30px_rgba(0,0,0,0.4)]"
             : "border-transparent bg-transparent py-6"
-        } px-6 w-full overflow-hidden`}
+        } px-6 w-full`}
       >
         <div className="mx-auto max-w-7xl flex items-center justify-between w-full">
           {/* Logo */}
@@ -57,7 +52,7 @@ export default function Navbar() {
               <Cpu size={20} className="animate-pulse" />
             </div>
             <span className="text-xl font-black tracking-tighter text-white uppercase italic">
-              SYNA<span className="text-cyan-400">.</span>SYSTEMS
+              AIRWALK<span className="text-cyan-400">.</span>AI
             </span>
           </NextLink>
 
@@ -117,7 +112,7 @@ export default function Navbar() {
                 variant="cyan-glow"
                 href="/pilot"
                 size="md"
-                className="w-full max-w-xs"
+                className="w-full max-w-xs mx-auto"
               >
                 Apply for Pilot
               </Button>

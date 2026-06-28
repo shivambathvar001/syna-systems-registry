@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 import { 
   ShieldCheck, 
@@ -18,7 +17,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Case Studies | Syna Systems Operational ROI",
+  title: "Case Studies | Airwalk AI Operational ROI",
   description: "Detailed performance reports on enterprise AI implementation. High-precision agentic workflows in Logistics, Healthcare RCM, Recruitment, and Finance.",
 };
 
@@ -88,7 +87,6 @@ export default function CaseStudies() {
 
   return (
     <>
-      <Navbar />
       <main className="flex min-h-screen flex-col items-center bg-[#020617] text-slate-200 grid-bg pt-20">
         
         {/* HERO SECTION */}

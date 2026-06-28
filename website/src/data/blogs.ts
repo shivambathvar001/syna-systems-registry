@@ -46,7 +46,7 @@ Generative AI shows immense promise in drafting clinical appeals, but LLM halluc
 
 ## Deterministic Retrieval-Augmented Generation (RAG)
 
-To solve this, Syna Systems leverages a stateful graph topology utilizing LangGraph. Instead of allowing the model to draft appeals from raw parameters, the architecture enforces a strict workflow:
+To solve this, Airwalk AI leverages a stateful graph topology utilizing LangGraph. Instead of allowing the model to draft appeals from raw parameters, the architecture enforces a strict workflow:
 1. **Payer Policy Retrieval:** Query regional payer portals and extract policy rules for the specific code.
 2. **Clinical Evidence Matching:** Parse the patient's EHR records verbatim for corresponding clinical values.
 3. **Draft Synthesis:** Assemble the appeal letter using only verified facts from the matched nodes.

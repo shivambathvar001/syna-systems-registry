@@ -1,12 +1,14 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const plusJakarta = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Syna Systems | Operational AI Infrastructure Partner",
-  description: "Elite stateful agentic backbones and reliable automation for the high-friction enterprise.",
+  title: "Airwalk AI | Operational AI Infrastructure Partner",
+  description: "Elite stateful agentic backbones and reliable automation for the high-friction enterprise. We deliver high-precision MVPs in 14 days.",
 };
 
 export default function RootLayout({
@@ -16,8 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-[#020617] text-slate-200 antialiased`}>
+      <body className={`${plusJakarta.className} bg-[#020617] text-slate-200 antialiased`}>
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

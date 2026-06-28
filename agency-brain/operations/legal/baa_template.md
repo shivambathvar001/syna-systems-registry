@@ -1,7 +1,7 @@
 # HIPAA Business Associate Agreement (BAA)
-**Syna Systems & [Client Name]**
+**Airwalk AI & [Client Name]**
 
-This Business Associate Agreement ("Agreement") is entered into as of the Effective Date by and between **Syna Systems LLC** ("Business Associate") and **[Client Name]** ("Covered Entity").
+This Business Associate Agreement ("Agreement") is entered into as of the Effective Date by and between **Airwalk AI LLC** ("Business Associate") and **[Client Name]** ("Covered Entity").
 
 ---
 

@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FileText, ArrowRight, Shield, Download, Clock, Sparkles } from "lucide-react";
 
 export const metadata = {
-  title: "Research & Whitepapers | Syna Systems",
+  title: "Research & Whitepapers | Airwalk AI",
   description: "Deep-dive technical whitepapers on Predictive Denial Management, Stateful Agent Architecture, and HIPAA-compliant AI security frameworks for healthcare RCM.",
   keywords: "healthcare AI whitepaper, denial management architecture, HIPAA AI compliance, stateful agents, RCM automation",
 };

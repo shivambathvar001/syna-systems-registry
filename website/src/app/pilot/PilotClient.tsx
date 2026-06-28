@@ -341,7 +341,7 @@ export default function PilotClient() {
               </div>
 
               <div>
-                <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Recoverable with Syna PDM</div>
+                <div className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1">Recoverable with Airwalk PDM</div>
                 <div className="text-4xl sm:text-5xl font-black text-cyan-400 font-mono tracking-tighter">
                   ${ (estimatedRecovery / 1000000).toFixed(2) }M
                 </div>

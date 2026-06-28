@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Props) {
   if (!post) return {};
   
   return {
-    title: `${post.title} | Syna Systems`,
+    title: `${post.title} | Airwalk AI`,
     description: post.excerpt,
     keywords: post.tags.join(", "),
   };

@@ -17,9 +17,9 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const paper = whitepapers.find((p) => p.slug === slug);
-  if (!paper) return { title: "Whitepaper Not Found | Syna Systems" };
+  if (!paper) return { title: "Whitepaper Not Found | Airwalk AI" };
   return {
-    title: `${paper.title} | Syna Systems Research`,
+    title: `${paper.title} | Airwalk AI Research`,
     description: paper.excerpt,
     keywords: paper.tags.join(", "),
   };
@@ -86,7 +86,7 @@ export default async function WhitepaperReaderPage({ params }: PageProps) {
         <div className="flex items-center gap-4 pb-8 border-b border-slate-800">
           <PrintButton />
           <span className="text-[10px] font-mono text-slate-600">
-            Syna Systems Intelligence Journal
+            Airwalk AI Intelligence Journal
           </span>
         </div>
       </section>

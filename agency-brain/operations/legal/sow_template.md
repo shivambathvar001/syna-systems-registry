@@ -3,12 +3,12 @@
 **Project Name:** Post-Denial Resolution Engine Pilot  
 **Master Agreement Date:** [Insert MSA Date]  
 
-This Statement of Work ("SOW") is issued pursuant to the Master Services Agreement ("MSA") between **Syna Systems LLC** ("Syna") and **[Client Name]** ("Client").
+This Statement of Work ("SOW") is issued pursuant to the Master Services Agreement ("MSA") between **Airwalk AI LLC** ("Airwalk") and **[Client Name]** ("Client").
 
 ---
 
 ## 1. Project Objective & Scope
-The objective is to integrate, configure, and validate the Syna Post-Denial Resolution Engine (the "Engine") within Client’s EHR environment to automate clinical evidence synthesis and appeal drafting for commercial claims denials.
+The objective is to integrate, configure, and validate the Airwalk Post-Denial Resolution Engine (the "Engine") within Client’s EHR environment to automate clinical evidence synthesis and appeal drafting for commercial claims denials.
 
 ### In-Scope Work:
 * API diagnostics and read-only connection to EHR sandbox endpoints (`/ClaimResponse`, `/DiagnosticReport`).
@@ -53,7 +53,7 @@ Name: ______________________
 Title: ______________________
 Date: ______________________
 
-**For Syna Systems LLC:**
+**For Airwalk AI LLC:**
 Name: ______________________
 Title: Principal Architect
 Date: ______________________
